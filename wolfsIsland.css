@@ -1,7 +1,6 @@
 #main {
-	width : 1000;
-	height : 800;
-	content : inline;
+	width : 1200;
+	height : 801;
 }
 
 #island {
@@ -10,8 +9,14 @@
 }
 
 #settings {
-	width : 100;
-	height : 800;
+	width : 300;
+	height : 801;
+
+}
+
+#expandedSettings {
+	height : 600;
+	display:none;
 }
 
 .grid{

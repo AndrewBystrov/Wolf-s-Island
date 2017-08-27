@@ -13,13 +13,52 @@
 			<button class="fill" id="start">Start</button>
 		</div>
 		<div>
-			<button class="fill"  id="resume">Resume</button>
+			<button class="fill" id="resume">Resume</button>
 		</div>
 		<div>
-			<button class="fill"  id="stop">Stop</button>
+			<button class="fill" id="stop">Stop</button>
 		</div>
 		<div>
-			<a id="setting">Settings</a>
+			<button type="button" class="fill settings">Settings</button>
+		</div>
+		<div id="expandedSettings">
+			<table width="300">
+				<colgroup>
+					<col width="50%"/>
+					<col width="50%"/>
+				</colgroup>
+				<tbody>
+				<tr>
+					<td colspan="2">Rabbit</td>
+				</tr>
+				<tr>
+					<td>Chance move :</td>
+					<td><input id="inputRabbitChance" value="0.1111111"/></td>
+				</tr>
+				<tr>
+					<td>2x rabbit chance :</td>
+					<td><input id="inputRabbitReproduction" value="0.2"/></td>
+				</tr>
+
+				<tr>
+					<td colspan="2">Wolf</td>
+				</tr>
+				<tr>
+					<td>Start points:</td>
+					<td><input id="wolfStartPoints" value="1.0"/></td>
+				</tr>
+				<tr>
+					<td>Loose points:</td>
+					<td><input id="wolfLosePoints" value="0.1"></td>
+				</tr>
+
+				<tr>
+					<td>2x wolf</td>
+					<td><input id="wolfReproduction" value="0.05"></td>
+				</tr>
+
+				</tbody>
+			</table>
 		</div>
 
 	</div>
