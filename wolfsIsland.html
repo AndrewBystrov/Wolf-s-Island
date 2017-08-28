@@ -2,13 +2,18 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="wolfsIsland.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="wolfsIsland.js"></script>
+	<script type="text/javascript" src="js/animal.js"></script>
+	<script type="text/javascript" src="js/world.js"></script>
+	<script type="text/javascript" src="js/wolfsIsland.js"></script>
 </head>
 <body>
 
 <div id="main">
 	<div class="inline grid" id="island"></div>
 	<div class="inline" id="settings">
+		<div>
+			<button class="fill" id="generate">Generate</button>
+		</div>
 		<div>
 			<button class="fill" id="start">Start</button>
 		</div>
@@ -32,6 +37,10 @@
 					<td colspan="2">Rabbit</td>
 				</tr>
 				<tr>
+					<td>Start count</td>
+					<td><input id="rabbitStart" value="8"/></td>
+				</tr>
+				<tr>
 					<td>Chance move :</td>
 					<td><input id="inputRabbitChance" value="0.1111111"/></td>
 				</tr>
@@ -42,6 +51,10 @@
 
 				<tr>
 					<td colspan="2">Wolf</td>
+				</tr>
+				<tr>
+					<td>Start count</td>
+					<td><input id="wolfStart" value="8"/></td>
 				</tr>
 				<tr>
 					<td>Start points:</td>
