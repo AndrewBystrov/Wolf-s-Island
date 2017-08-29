@@ -1,6 +1,20 @@
 'use strict'
 
-var DIRECTION = [0,1,2,3,4,5,6,7]
+/*
+	0 1 2
+	3   4
+	5 6 7
+*/
+var DIRECTION = {
+	 0 : {x : -1, y : -1}
+	,1 : {x :  0, y : -1}
+	,2 : {x : +1, y : -1}
+	,3 : {x : -1, y :  0}
+	,4 : {x : +1, y :  0}
+	,5 : {x : -1, y : +1}
+	,6 : {x :  0, y : +1}
+	,7 : {x : +1, y : +1}
+}
 
 $(document).ready(function() {
 
@@ -23,14 +37,17 @@ $(document).ready(function() {
 		world.start();
 	})
 
+	$('#stop').click(function(event) {
+		world.stop();
+
+	})
+
 	$('button.settings').click(function(event) {
 		$('#expandedSettings').toggle(1);
 
 	})
 
-
-
-
+	//private functions
 	function _clear() {
 		$("#island > img").remove()
 	}
